@@ -20,176 +20,237 @@
         </nav>
     </header>
 
-    <main> <!-- Plocka bort de div som är onödiga -->
-        <h4>Menu sorting | Meny sortering</h4> <!-- <= Behövs denna? -->
-        <div>  <!-- Ska inputs ligga i main? -->      
-            <input type="checkbox" id="vegetarian"><label for="vegetarian">vegetarian | Vegetariskt</label>
-            <input type="checkbox" id="meat"><label for="meat">Meat | Kött</label>
-            <input type="checkbox" id="fish"><label for="fish">Fish | Fisk</label>
-        </div>
-        <div>  
-            <input type="checkbox" id="gluten"><label for="gluten">Gluten</label>
-            <input type="checkbox" id="lactose"><label for="lactose">Lactose | Laktos</label>            
-            <input type="checkbox" id="egg"><label for="egg">Egg | Ägg</label>
-            <input type="checkbox" id="nuts"><label for="nuts">Nuts | Nötter</label>
-        </div>
-        <div>  
-            <input type="checkbox" id="price-descending"><label for="price-descending">Highest price | Högsta pris</label>
-            <input type="checkbox" id="price-ascending"><label for="price-ascending">Lowest price | Lägsta pris</label>
-        </div>
-        
-        <div class="row text-center bg-whitetext-dark">
+    <main> 
+        <div class="row text-center bg-whitetext-dark p-2">
             <h1>Main courses | Varmrätter</h1>
         </div>
         
-        <section class="p-5">
-            <div class="container">
-                <div class="row col g-4">
-                    <div class="col-sm-6">
-                        <div class="card bg-dark text-light">
-                            <div class="card-body">
-                                <div class="h5 mb-3">
-                                    <p>Svenska  Rätt  pris</p>
+        <section class="p-2">
+            <div class="row">
+                <div class="col-3">
+                    <div class="container">
+                        <div class="row col g-2">
+                            <div class="col-sm-12">
+                                <div class="card bg-dark text-light">
+                                    <div class="card-body">
+                                        <div class="h5 mb-3">
+                                            <p><u>Menu sorting | Meny sortering</u></p>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Vegetarian | Vegetariskt
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Meat | Kött
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Fish | Fisk
+                                            </label>
+                                        </div>
+                                        <br>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Gluten
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Lactose | Laktos
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Egg | Ägg
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Nuts | Nötter
+                                            </label>
+                                        </div>
+                                        <br>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Highest price | Högsta pris
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Lowest price | Lägsta pris
+                                            </label>
+                                        </div>
+                                    </div>
                                 </div>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate rem adipisci, magni
-                                    a quae asperiores.
-                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6">
-                        <div class="card bg-dark text-light">
-                            <div class="card-body">
-                                <div class="h5 mb-3">
-                                    <p>Svenska  Rätt  pris</p>
+                </div>
+    
+                <div class="col-9">
+                    <div class="container">
+                        <div class="row col g-2">
+                            <div class="col-sm-6">
+                                <div class="card bg-dark text-light">
+                                    <div class="card-body">
+                                        <div class="h5 mb-3">
+                                            <p>Svenska  Rätt  pris</p>
+                                        </div>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate rem adipisci, magni
+                                            a quae asperiores.
+                                        </p>
+                                    </div>
                                 </div>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate rem adipisci, magni
-                                    a quae asperiores.
-                                </p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="card bg-dark text-light">
-                            <div class="card-body">
-                                <div class="h5 mb-3">
-                                    <p>Svenska  Rätt  pris</p>
+                            <div class="col-sm-6">
+                                <div class="card bg-dark text-light">
+                                    <div class="card-body">
+                                        <div class="h5 mb-3">
+                                            <p>Svenska  Rätt  pris</p>
+                                        </div>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate rem adipisci, magni
+                                            a quae asperiores.
+                                        </p>
+                                    </div>
                                 </div>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate rem adipisci, magni
-                                    a quae asperiores.
-                                </p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="card bg-dark text-light">
-                            <div class="card-body">
-                                <div class="h5 mb-3">
-                                    <p>Svenska  Rätt  pris</p>
+                            <div class="col-sm-6">
+                                <div class="card bg-dark text-light">
+                                    <div class="card-body">
+                                        <div class="h5 mb-3">
+                                            <p>Svenska  Rätt  pris</p>
+                                        </div>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate rem adipisci, magni
+                                            a quae asperiores.
+                                        </p>
+                                    </div>
                                 </div>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate rem adipisci, magni
-                                    a quae asperiores.
-                                </p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="card bg-dark text-light">
-                            <div class="card-body">
-                                <div class="h5 mb-3">
-                                    <p>Svenska  Rätt  pris</p>
+                            <div class="col-sm-6">
+                                <div class="card bg-dark text-light">
+                                    <div class="card-body">
+                                        <div class="h5 mb-3">
+                                            <p>Svenska  Rätt  pris</p>
+                                        </div>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate rem adipisci, magni
+                                            a quae asperiores.
+                                        </p>
+                                    </div>
                                 </div>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate rem adipisci, magni
-                                    a quae asperiores.
-                                </p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="card bg-dark text-light">
-                            <div class="card-body">
-                                <div class="h5 mb-3">
-                                    <p>Svenska  Rätt  pris</p>
+                            <div class="col-sm-6">
+                                <div class="card bg-dark text-light">
+                                    <div class="card-body">
+                                        <div class="h5 mb-3">
+                                            <p>Svenska  Rätt  pris</p>
+                                        </div>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate rem adipisci, magni
+                                            a quae asperiores.
+                                        </p>
+                                    </div>
                                 </div>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate rem adipisci, magni
-                                    a quae asperiores.
-                                </p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="card bg-dark text-light">
-                            <div class="card-body">
-                                <div class="h5 mb-3">
-                                    <p>Svenska  Rätt  pris</p>
+                            <div class="col-sm-6">
+                                <div class="card bg-dark text-light">
+                                    <div class="card-body">
+                                        <div class="h5 mb-3">
+                                            <p>Svenska  Rätt  pris</p>
+                                        </div>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate rem adipisci, magni
+                                            a quae asperiores.
+                                        </p>
+                                    </div>
                                 </div>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate rem adipisci, magni
-                                    a quae asperiores.
-                                </p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="card bg-dark text-light">
-                            <div class="card-body">
-                                <div class="h5 mb-3">
-                                    <p>Svenska  Rätt  pris</p>
+                            <div class="col-sm-6">
+                                <div class="card bg-dark text-light">
+                                    <div class="card-body">
+                                        <div class="h5 mb-3">
+                                            <p>Svenska  Rätt  pris</p>
+                                        </div>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate rem adipisci, magni
+                                            a quae asperiores.
+                                        </p>
+                                    </div>
                                 </div>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate rem adipisci, magni
-                                    a quae asperiores.
-                                </p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="card bg-dark text-light">
-                            <div class="card-body">
-                                <div class="h5 mb-3">
-                                    <p>Svenska  Rätt  pris</p>
+                            <div class="col-sm-6">
+                                <div class="card bg-dark text-light">
+                                    <div class="card-body">
+                                        <div class="h5 mb-3">
+                                            <p>Svenska  Rätt  pris</p>
+                                        </div>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate rem adipisci, magni
+                                            a quae asperiores.
+                                        </p>
+                                    </div>
                                 </div>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate rem adipisci, magni
-                                    a quae asperiores.
-                                </p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="card bg-dark text-light">
-                            <div class="card-body">
-                                <div class="h5 mb-3">
-                                    <p>Svenska  Rätt  pris</p>
+                            <div class="col-sm-6">
+                                <div class="card bg-dark text-light">
+                                    <div class="card-body">
+                                        <div class="h5 mb-3">
+                                            <p>Svenska  Rätt  pris</p>
+                                        </div>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate rem adipisci, magni
+                                            a quae asperiores.
+                                        </p>
+                                    </div>
                                 </div>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate rem adipisci, magni
-                                    a quae asperiores.
-                                </p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="card bg-dark text-light">
-                            <div class="card-body">
-                                <div class="h5 mb-3">
-                                    <p>Svenska  Rätt  pris</p>
+                            <div class="col-sm-6">
+                                <div class="card bg-dark text-light">
+                                    <div class="card-body">
+                                        <div class="h5 mb-3">
+                                            <p>Svenska  Rätt  pris</p>
+                                        </div>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate rem adipisci, magni
+                                            a quae asperiores.
+                                        </p>
+                                    </div>
                                 </div>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate rem adipisci, magni
-                                    a quae asperiores.
-                                </p>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card bg-dark text-light">
+                                    <div class="card-body">
+                                        <div class="h5 mb-3">
+                                            <p>Svenska  Rätt  pris</p>
+                                        </div>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate rem adipisci, magni
+                                            a quae asperiores.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            
+                
         </section>
     </main>
 
