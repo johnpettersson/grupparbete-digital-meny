@@ -49,7 +49,7 @@
 		"nameEN": "Schnitzel",
 		"descEN": "200 grams of meat \"Borås biggest\" served with lemon, capers, anchovy, herb butter and a redwine reduction with fried potatoes",
 		"price": 175,
-		"type:": "meat",
+		"type": "meat",
 		"allergies": ["gluten"]
 	},
 	{
@@ -59,7 +59,7 @@
 		"descEN": "Grilled chiken, bacon, croutons, parmesan and caesardressing",
 		"price": 139,
 		"halfPrice": 85,
-		"type:": "meat",
+		"type": "meat",
 		"allergies": ["gluten", "dairy"]
 	},
 	{
@@ -68,7 +68,7 @@
 		"nameEN": "Salmonsallad with Quinoa",
 		"descEN": "Grilled salmon with quinoa, cocktail tomatoes, julianne carrot, mixed salad, red onion with vinegrette",
 		"price": 159,
-		"type:": "fish"
+		"type": "fish"
 	},
 	{
 		"nameSE": "Krämig kycklingpasta",
@@ -76,7 +76,7 @@
 		"nameEN": "Creamy Chickenpasta",
 		"descEN": "Sundried tomatoes, basil, vegetables and parmesan",
 		"price": 169,
-		"type:": "meat",
+		"type": "meat",
 		"allergies": ["nuts"]
 	},
 	{
@@ -86,7 +86,7 @@
 		"descEN": "Steamed mussles in a creamy cava sauce, topped with cream fraiche and jalapeños, served with fries and aioli",
 		"price": 189,
 		"halfPrice": 109,
-		"type:": "fish",
+		"type": "fish",
 		"allergies": ["dairy"]
 	},
 	{
@@ -95,7 +95,7 @@
 		"nameEN": "Grilled Beef Tenderloin",
 		"descEN": "200 gram beef tenderloin, redwine reduction, fried vegetable and potato gratin (possible with fries and bearnaise)",
 		"price": 259,
-		"type:": "meat",
+		"type": "meat",
 		"allergies": ["dairy"]
 	}
 ]

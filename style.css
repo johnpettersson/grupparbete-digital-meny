@@ -2,15 +2,8 @@
     background-image: url(img/brickwall.jpg);
 }*/
 
-.col-4 {
-    display: flex;
-}
-
-
-
-
 .allergy {
-    align-items: center;
+    display: none;
 }
 
 .hidden {
