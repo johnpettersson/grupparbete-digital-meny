@@ -4,6 +4,12 @@
 
 .col-4 {
     display: flex;
+}
+
+
+
+
+.allergy {
     align-items: center;
 }
 
