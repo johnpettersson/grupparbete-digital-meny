@@ -48,13 +48,6 @@ highestPriceBtn.addEventListener('change', function () {
         app.data.forEach((priceOrderHighest, index) => priceOrderHighest.element.style.order = 0)
 })
 
- 
-
-
-
-
-
-
 let checkboxGluten = document.getElementById("gluten");
 let checkboxLactose = document.getElementById("lactose");
 let checkBoxEgg = document.getElementById("egg");
