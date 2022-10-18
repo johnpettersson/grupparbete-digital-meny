@@ -4,5 +4,11 @@
 
 .col-4 {
     display: flex;
-    align-items: center;
+}
+
+
+
+
+.allergy {
+    display: none;
 }

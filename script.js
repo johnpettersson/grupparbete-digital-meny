@@ -31,3 +31,44 @@ fetch("menu.json")
       app.data = data;        
     });
   });
+
+
+
+
+
+
+
+
+let checkboxGluten = document.getElementById("gluten");
+let checkboxLactose = document.getElementById("lactose");
+let checkBoxEgg = document.getElementById("egg");
+let checkboxNuts = document.getElementById("nuts");
+
+checkboxGluten.addEventListener("change", onAllergyCheckboxChange)
+checkboxLactose.addEventListener("change", onAllergyCheckboxChange);
+checkBoxEgg.addEventListener("change", onAllergyCheckboxChange);
+checkboxNuts.addEventListener("change", onAllergyCheckboxChange);
+
+function onAllergyCheckboxChange() {	
+
+	// visar alla element
+	app.data.forEach(item => item.element.classList.remove("allergy"));
+
+
+	// kollar vilka checkboxar som är checkade
+	let allergies = [];
+	if(checkboxGluten.checked)
+		allergies.push("gluten");
+	if(checkboxLactose.checked)
+		allergies.push("dairy");
+	if(checkBoxEgg.checked)
+		allergies.push("egg");
+	if(checkboxNuts.checked)
+		allergies.push("nuts");
+
+	// filtrerar och gömmer items som innehåller det som checkats för
+	app.data.filter(item => item.allergies && item.allergies.some(a => allergies.includes(a)))
+	.forEach(item => {
+		item.element.classList.add("allergy")
+	})
+}
