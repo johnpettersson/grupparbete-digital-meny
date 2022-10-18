@@ -81,16 +81,20 @@ function onAllergyCheckboxChange() {
 		item.element.classList.add("allergy")
 	})
 }
-  
+  function checkboxChange () {
+  app.data.forEach(item => item.element.classList.add("hidden"));
+  if (meatBtn.checked)
+  app.data.filter(menuItems => menuItems.type === "meat").forEach((noMeat) => noMeat.element.classList.remove("hidden"))
+  if(vegBtn.checked)
+  app.data.filter(menuItems => menuItems.type === "veg").forEach((noVeg) => noVeg.element.classList.remove("hidden"))
+  if(fishBtn.checked)
+  app.data.filter(menuItems => menuItems.type === "fish").forEach((noFish) => noFish.element.classList.remove("hidden"))
+  }
+
   const meatBtn = document.getElementById("meat");
-  meatBtn.addEventListener('change',function(){
-  app.data.filter(menuItems => menuItems.type !== "meat").forEach((noMeat) => noMeat.element.classList.toggle("hidden"))
-  })
   const vegBtn = document.getElementById("veg");
-  vegBtn.addEventListener('change',function(){
-  app.data.filter(menuItems => menuItems.type !== "veg").forEach((noVeg) => noVeg.element.classList.toggle("hidden"))
-  })
   const fishBtn = document.getElementById("fish");
-  fishBtn.addEventListener('change',function(){
-  app.data.filter(menuItems => menuItems.type !== "fish").forEach((noFish) => noFish.element.classList.toggle("hidden"))
-  })
+
+  meatBtn.addEventListener('change',checkboxChange) 
+  vegBtn.addEventListener('change',checkboxChange)
+  fishBtn.addEventListener('change',checkboxChange)
