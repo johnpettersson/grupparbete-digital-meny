@@ -15,12 +15,9 @@ fetch("menu.json")
       div2.append(div3);
       div3.append(div4);
       div1.classList.add("col-sm-6");
-      div2.classList.add("card");
-      div2.classList.add("bg-dark");
-      div2.classList.add("text-light");
+      div2.classList.add("card", "bg-dark", "text-light");      
       div3.classList.add("card-body");
-      div4.classList.add("h5");
-      div4.classList.add("mb-3");
+      div4.classList.add("h5", "mb-3");      
         if (post.halfPrice) {
             div4.insertAdjacentHTML("beforeend", `<h3>${post.nameSE}</h3>`);
             div4.insertAdjacentHTML("beforeend", `<h3>Halv ${post.halfPrice}kr / Hel ${post.price}kr</h3>`);
