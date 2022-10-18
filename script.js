@@ -18,12 +18,12 @@ fetch("menu.json")
       div2.classList.add("card", "bg-dark", "text-light");      
       div3.classList.add("card-body");
       div4.classList.add("h5", "mb-3");      
-        if (post.halfPrice) {
-            div4.insertAdjacentHTML("beforeend", `<h3>${post.nameSE}</h3>`);
-            div4.insertAdjacentHTML("beforeend", `<h3>Halv ${post.halfPrice}kr / Hel ${post.price}kr</h3>`);
-        } else { 
-            div4.insertAdjacentHTML("beforeend", `<h3>${post.nameSE} ${post.price}kr</h3>`);
-        }
+      if (post.halfPrice) {
+        div4.insertAdjacentHTML("beforeend", `<h3>${post.nameSE}</h3>`);
+        div4.insertAdjacentHTML("beforeend", `<h3>Halv ${post.halfPrice}kr / Hel ${post.price}kr</h3>`);
+      } else { 
+        div4.insertAdjacentHTML("beforeend", `<h3>${post.nameSE} ${post.price}kr</h3>`);
+      }
       div3.insertAdjacentHTML("beforeend", `<p>${post.descSE}</p>`);
       div3.insertAdjacentHTML("beforeend", `<h3>${post.nameEN}</h3>`);
       div3.insertAdjacentHTML("beforeend", `<p>${post.descEN}</p>`);      
@@ -72,3 +72,16 @@ function onAllergyCheckboxChange() {
 		item.element.classList.add("allergy")
 	})
 }
+  
+  const meatBtn = document.getElementById("meat");
+  meatBtn.addEventListener('change',function(){
+  app.data.filter(menuItems => menuItems.type !== "meat").forEach((noMeat) => noMeat.element.classList.toggle("hidden"))
+  })
+  const vegBtn = document.getElementById("veg");
+  vegBtn.addEventListener('change',function(){
+  app.data.filter(menuItems => menuItems.type !== "veg").forEach((noVeg) => noVeg.element.classList.toggle("hidden"))
+  })
+  const fishBtn = document.getElementById("fish");
+  fishBtn.addEventListener('change',function(){
+  app.data.filter(menuItems => menuItems.type !== "fish").forEach((noFish) => noFish.element.classList.toggle("hidden"))
+  })
