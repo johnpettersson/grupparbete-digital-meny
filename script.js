@@ -82,6 +82,7 @@ function onAllergyCheckboxChange() {
 	})
 }
   function checkboxChange () {
+
   app.data.forEach(item => item.element.classList.add("hidden"));
   if (meatBtn.checked)
   app.data.filter(menuItems => menuItems.type === "meat").forEach((noMeat) => noMeat.element.classList.remove("hidden"))
@@ -89,6 +90,8 @@ function onAllergyCheckboxChange() {
   app.data.filter(menuItems => menuItems.type === "veg").forEach((noVeg) => noVeg.element.classList.remove("hidden"))
   if(fishBtn.checked)
   app.data.filter(menuItems => menuItems.type === "fish").forEach((noFish) => noFish.element.classList.remove("hidden"))
+  if(!fishBtn.checked && !vegBtn.checked && !meatBtn.checked)
+  app.data.forEach(item => item.element.classList.remove("hidden"));
   }
 
   const meatBtn = document.getElementById("meat");
