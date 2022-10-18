@@ -1,5 +1,5 @@
 [{
-		"nameSE:": "Fläskfiléplanka",
+		"nameSE": "Fläskfiléplanka",
 		"descSE": "Duchesse mos, rödvinsky, bearnaise och stekta grönsaker",
 		"nameEN": "Pork Tenderloin Plank Steak",
 		"descEN": "Duchesse potatoes, a redwine reduction, béarnaise and fried vegetables",
@@ -8,7 +8,7 @@
 		"allergies": ["egg"]
 	},
 	{
-		"nameSE:": "Biff Rydberg",
+		"nameSE": "Biff Rydberg",
 		"descSE": "Tärnad oxfilé, potatis och gullök, serveras med dijonsenapskräm och rå äggula",
 		"nameEN": "Biff Rydberg",
 		"descEN": "Diced beef tenderloin, potatoes and onion, served with dijonmustard and raw egg yolk",
@@ -17,7 +17,7 @@
 		"allergies": ["egg"]
 	},
 	{
-		"nameSE:": "Spicy Cheeseburger",
+		"nameSE": "Spicy Cheeseburger",
 		"descSE": "180gram högrevsburgare med sallad, tomat, picklad rödlök, cheddarost emd jalapeños och barbecuesås i briochebröd med pommes och rökig ranch-aioli",
 		"nameEN": "Spicy Cheeseburger",
 		"descEN": "180gram prime rib burger with lettuce, tomato, pickled red onion, cheddar cheese with jalapeños and barbecue sauce in brioche bread with fries and smokey ranch-aoli",
@@ -26,7 +26,7 @@
 		"allergies": ["gluten", "dairy"]
 	},
 	{
-		"nameSE:": "Halloumiburgare",
+		"nameSE": "Halloumiburgare",
 		"descSE": "Sallad, tomat, rödlök och guacamole i briochebröd med pommes och aioli",
 		"nameEN": "Halloumiburger",
 		"descEN": "Lettuce, tomato, red onion and guacamole in brioche bread with fries and aioli.",
