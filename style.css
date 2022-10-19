@@ -1,6 +1,7 @@
-/*main {
+main {
     background-image: url(img/brickwall.jpg);
-}*/
+    background-size: contain;
+}
 
 .allergy {
     display: none;
@@ -9,3 +10,5 @@
 .hidden {
     display: none;
 }
+
+

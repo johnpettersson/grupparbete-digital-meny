@@ -17,7 +17,7 @@ fetch("menu.json")
             div2.append(div3);
             div3.append(div4);
             div1.classList.add("col-sm-6");
-            div2.classList.add("card", "bg-dark", "text-light");
+            div2.classList.add("card", "bg-dark", "text-light", "h-100");
             div3.classList.add("card-body");
             div4.classList.add("h5", "mb-3");
 
