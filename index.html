@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="style.css">   
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -19,101 +19,87 @@
         </nav>
     </header>
 
-    <main> 
-        <section class="p-2">
-            <div class="row">
+    <main>
+        <div class="container">
+            <div class="text-center text-dark p-3">
+                <h1>MAIN COURSES | VARMRÄTTER</h1>
+            </div>
+            <div class="row gx-1">
                 <div class="col-4">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="card bg-dark text-light">
-                                    <div class="card-body">
-                                        <div class="h5 mb-3">
-                                            <p><u>SORT/<br>SORTERA EFTER</u></p>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="veg">
-                                            <label class="form-check-label" for="veg">
-                                                Vegetarian | Vegetariskt
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="meat">
-                                            <label class="form-check-label" for="meat">
-                                                Meat | Kött
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="fish">
-                                            <label class="form-check-label" for="fish">
-                                                Fish | Fisk
-                                            </label>
-                                        </div>
-                                        <br>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="gluten">
-                                            <label class="form-check-label" for="gluten">
-                                                Gluten
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="lactose">
-                                            <label class="form-check-label" for="lactose">
-                                                Lactose | Laktos
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="egg">
-                                            <label class="form-check-label" for="egg">
-                                                Egg | Ägg
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="nuts">
-                                            <label class="form-check-label" for="nuts">
-                                                Nuts | Nötter
-                                            </label>
-                                        </div>
-                                        <br>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="highestPrice">
-                                            <label class="form-check-label" for="highestPrice">
-                                                Highest price | Högsta pris
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="lowestPrice">
-                                            <label class="form-check-label" for="lowestPrice">
-                                                Lowest price | Lägsta pris
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="card bg-dark text-light">
+                        <div class="card-body">
+                            <h3><u>SORT/<br>SORTERA EFTER</u></h3>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="veg">
+                                <label class="form-check-label" for="veg">
+                                    Vegetarian | Vegetariskt
+                                </label>
                             </div>
-                            <div class="col-sm-12 card bg-dark text-light mt-2">
-                                <div class="h5 mb-3">
-                                    <p>BESTÄLLNING</p>
-                                    <ul id="order" class="list-unstyled"></ul>
-                                </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="meat">
+                                <label class="form-check-label" for="meat">
+                                    Meat | Kött
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="fish">
+                                <label class="form-check-label" for="fish">
+                                    Fish | Fisk
+                                </label>
+                            </div>
+                            <br>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="gluten">
+                                <label class="form-check-label" for="gluten">
+                                    Gluten
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="lactose">
+                                <label class="form-check-label" for="lactose">
+                                    Lactose | Laktos
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="egg">
+                                <label class="form-check-label" for="egg">
+                                    Egg | Ägg
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="nuts">
+                                <label class="form-check-label" for="nuts">
+                                    Nuts | Nötter
+                                </label>
+                            </div>
+                            <br>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="highestPrice">
+                                <label class="form-check-label" for="highestPrice">
+                                    Highest price | Högsta pris
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="lowestPrice">
+                                <label class="form-check-label" for="lowestPrice">
+                                    Lowest price | Lägsta pris
+                                </label>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                
-    
-                <div class="col-8">
-                    <div class="container">
-                        <div class="row text-left bg-white text-dark p-3">
-                        <h1>MAIN COURSES | VARMRÄTTER</h1>
+                    <div class="card bg-dark text-light mt-2">
+                        <div class="card-body">
+                            <h3><u>BESTÄLLNING</u></h3>
+                            <ul id="order" class="list-unstyled"></ul>
                         </div>
-                        <div class="row text-left bg-whitetext-dark p-2 g-2" id="menu-items">                                                     
-                        </div>           
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="row text-left bg-whitetext-dark g-2" id="menu-items">
                     </div>
                 </div>
             </div>
-                
-        </section>
+        </div>
     </main>
 
     <script src="script.js"></script>
