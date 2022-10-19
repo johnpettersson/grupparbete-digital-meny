@@ -41,11 +41,19 @@ fetch("menu.json")
     });
 
 function addItemToCart (post){
+    let removeBtn = document.createElement('button');
     let listItem = document.createElement('li');
+    removeBtn.textContent = 'Ta bort';
     listItem.textContent = post.nameSE;
     document.getElementById('order').appendChild(listItem);
+    document.getElementById('order').appendChild(removeBtn);
     
+    removeBtn.addEventListener('click',function(){
+    listItem.remove();
+    removeBtn.remove();
+    });
 }
+
 
 const lowestPriceBtn = document.getElementById("lowestPrice");
 lowestPriceBtn.addEventListener('change', function () {
