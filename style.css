@@ -1,4 +1,5 @@
 main {
+    min-height: 100%;
     background-image: url(img/brickwall.jpg);
     background-size: contain;
 }
